@@ -2,7 +2,7 @@ services:
   mariadb:
     image: docker.io/bitnami/mariadb:11.3
     volumes:
-      - 'mariadb_data:/bitnami/mariadb'
+      - mariadb_data:/bitnami/mariadb
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - MARIADB_USER=${DB_USER}
@@ -11,10 +11,10 @@ services:
   wordpress:
     image: docker.io/bitnami/wordpress:6
     ports:
-      - '80:8080'
-      - '443:8443'
+      - ${HTTP_PORT}:8080
+      - ${HTTPS_PORT}:8443
     volumes:
-      - 'wordpress_data:/bitnami/wordpress'
+      - wordpress_data:/bitnami/wordpress
     depends_on:
       - mariadb
     environment:

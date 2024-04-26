@@ -8,6 +8,6 @@ logs:
 	docker container logs tp-docker-wordpress-1
 
 test:
-	curl http://localhost:80
+	curl http://localhost
 
 .PHONY: start stop logs test
