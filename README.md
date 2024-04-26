@@ -6,9 +6,30 @@ Docker compose to deploy a 3-tier architecture
 
  - [Docker Compose](https://docs.docker.com/compose/)
 
-# Windows, MacOS & Linux
+## Getting started
+There are two ways to manage services:
+ - with the `compose` plugin *(docker compose)*
+ - with the Docker Compose package *(docker-compose)*.
 
-Launch services
-```sh
-docker compose up -d
-```
+### Plugin mode
+- Start services
+    ```sh
+    docker compose up -d
+    ```
+
+- Stop services
+    ```sh
+    docker compose down --remove-orphans
+    ```
+
+
+### Package mode
+- Start services
+    ```sh
+    docker-compose up -d
+    ```
+
+- Stop services
+    ```sh
+    docker-compose down --remove-orphans
+    ```
