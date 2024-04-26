@@ -4,7 +4,8 @@ Docker compose to deploy a 3-tier architecture
 
 ## Dependencies
 
- - [Docker Compose](https://docs.docker.com/compose/)
+ - [Docker](https://docs.docker.com/engine/install/)
+ - [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## Installation
 
