@@ -41,3 +41,6 @@ There are two ways to manage services:
     ```sh
     docker-compose down --remove-orphans
     ```
+
+### Links
+* Wordpress : [http://localhost](http://localhost:80)
